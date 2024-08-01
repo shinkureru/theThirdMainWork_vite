@@ -1,0 +1,52 @@
+/* layout */
+.ffeg{font-family: "Roboto", sans-serif;}
+.fftw{font-family: "Noto Sans TC", sans-serif;}
+
+/* flex  */
+.d-flex{display: flex;}
+.jc-c{justify-content:center}
+.jc-sb{justify-content:space-between}
+.ai-fe{align-items: flex-end;}
+.fd-c{flex-direction: column;}
+.ai-c{align-items: center;}
+.fw-w{flex-wrap: wrap;}
+
+a{text-decoration-line:none}
+
+*, *::after, *::before {box-sizing: border-box;}
+
+.container {
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* 抵銷最左邊和最右邊的 col 多出來的 padding */
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* 抵銷最左邊和最右邊的 col 多出來的 padding */
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* 一個元素佔 3 欄，格線系統總共是 12 欄， 12 / 3 可分成 4 等份 */
+.col-3{
+	/* 100% / 4 */
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
